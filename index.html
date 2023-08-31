@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>CALCULATOR</h1>
+
+    <div class="container">
+         <form action="">
+            <p>CASIO</p>
+           
+         </form>
+
+            <input  type="text" id="output">
+            <br>
+
+            <input class="button number" onclick="display(7)" type="button" value="7">
+            <input class="button number" onclick="display(8)" type="button" value="8">
+            <input class="button number" onclick="display(9)" type="button" value="9">
+            <input class="button operator"  onclick="display('/')" type="button" value="/">
+
+            <br>
+
+            <input class="button number" onclick="display(4)" type="button" value="4">
+            <input class="button number" onclick="display(5)" type="button" value="5">
+            <input class="button number" onclick="display(6)" type="button" value="6">
+            <input class="button operator" onclick="display('*')" type="button" value="*">
+
+            <br>
+
+            <input class="button number" onclick="display(1)" type="button" value="1">
+            <input class="button number" onclick="display(2)" type="button" value="2">
+            <input class="button number" onclick="display(3)" type="button" value="3">
+            <input class="button operator" onclick="display('+')" type="button" value="+">
+          
+            <br>
+
+            <input class="button clear" onclick="clearAll()" type="button" value="C">
+            <input class="button number" onclick="display(0)" type="button" value="0">
+            <input class="button number" onclick="display('.')" type="button" value=".">
+            <input class="button operator" onclick="display('-')" type="button" value="-">
+
+            <br>
+
+            <input class="button clear" onclick="removeLast(0,-1)" type="button" value="D">
+            <input class="button result" onclick="evaluateExp()" type="button" value="=">
+           
+
+
+
+         </form>
+
+    </div>
+
+    
+</body>
+<script src="./main.js"></script>
+</html>
